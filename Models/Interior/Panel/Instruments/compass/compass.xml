@@ -9,9 +9,9 @@
       <object-name>Compass</object-name>
       <property>instrumentation/magnetic-compass/indicated-heading-deg</property>
       <center> 
-        <x-m>-0.042 </x-m>
+        <x-m>-0.032 </x-m>
         <y-m> 0.000 </y-m>
-        <z-m> 0.000 </z-m>
+        <z-m> 0.010 </z-m>
       </center>
       <axis> 
         <x> 0 </x>
