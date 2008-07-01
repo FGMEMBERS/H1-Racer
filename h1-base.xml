@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+ 
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>0.1 Alpha</status>
+
+    <fuel-fraction>0.8</fuel-fraction>
+  
+    <model>
+      <path archive="y">Aircraft/H1-Racer/Models/h1.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <sound>
+      <path>Aircraft/H1-Racer/Sounds/h1-sound.xml</path>
+    </sound>
+
+    <startup>
+      <splash-texture>Aircraft/H1-Racer/h1-splash.png</splash-texture>
+    </startup>
+  
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>Hughes H1 Racer</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+    </help>
+
+    <menubar include="Gui/h1-menu.xml"/>
+
+  </sim>
+
+  <input>
+    <keyboard include="Nasal/h1-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <h1> 
+      <file>Aircraft/H1-Racer/Nasal/doors.nas</file>
+      <file>Aircraft/H1-Racer/Nasal/light.nas</file>
+      <file>Aircraft/H1-Racer/Nasal/liveries.nas</file>
+      <file>Aircraft/H1-Racer/Nasal/immat.nas</file>
+    </h1>
+  </nasal>
+
+</PropertyList>

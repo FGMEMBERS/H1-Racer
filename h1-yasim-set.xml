@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<PropertyList include="h1-base.xml">
+
+  <sim>
+
+    <description>Huges H1 Racer (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>h1-yasim</aero>
+
+  </sim>
+  
+</PropertyList>

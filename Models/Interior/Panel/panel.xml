@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/H1-Racer/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.091 </x-m>
+      <y-m>  0.058 </y-m>
+      <z-m> -0.022 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -25.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- COMPASS -->
+  <model>
+    <path>Aircraft/H1-Racer/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m>  0.091 </x-m>
+      <y-m> -0.058 </y-m>
+      <z-m> -0.022 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -25.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
+

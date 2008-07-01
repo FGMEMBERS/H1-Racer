@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/H1-Racer/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -0.286 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.350 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/H1-Racer/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.022 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

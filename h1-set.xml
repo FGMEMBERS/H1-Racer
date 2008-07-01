@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!-- <PropertyList include="h1-jsbsim-set.xml"> -->
+<PropertyList include="h1-yasim-set.xml">
+
+  <sim>
+    <description>Hughes H1 racer</description>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+  </sim>
+
+</PropertyList>
+
