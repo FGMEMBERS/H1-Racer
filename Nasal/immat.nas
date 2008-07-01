@@ -25,7 +25,7 @@ var immat_dialog = gui.Dialog.new("/sim/gui/dialogs/h1/status/dialog",
 setlistener("/sim/signals/fdm-initialized", func {
   if (props.globals.getNode("/sim/model/immat") == nil) {
     var immat = props.globals.getNode("/sim/model/immat",1);
-    var callsign = props.globals.getNode("/sim/multiplay/callsign").getvalue();
+    var callsign = props.globals.getNode("/sim/multiplay/callsign").getValue();
     if (callsign != "callsign") immat.setValue(callsign);
   else immat.setValue("NR258Y");
   }
