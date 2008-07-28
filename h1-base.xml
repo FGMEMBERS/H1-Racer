@@ -45,7 +45,7 @@
       </key>
     </help>
 
-    <menubar include="Gui/h1-menu.xml"/>
+    <menubar include="Dialogs/h1-menu.xml"/>
 
   </sim>
 
