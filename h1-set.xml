@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
-<!-- <PropertyList include="h1-jsbsim-set.xml"> -->
-<PropertyList include="h1-yasim-set.xml">
+<!-- <PropertyList include="h1-jsbsim-cnf.xml"> -->
+<PropertyList include="h1-yasim-cnf.xml">
 
   <sim>
     <description>Hughes H1 racer</description>
