@@ -7,6 +7,37 @@
       <livery>
         <name type="string">Default</name>
         <texture>texture.png</texture>
+<!--
+        <diffuse>
+          <red>   0.5 </red>
+          <green> 0.5 </green>
+          <blue>  0.5 </blue>
+        </diffuse>
+
+        <ambient>
+          <red>   0.5 </red>
+          <green> 0.5 </green>
+          <blue>  0.5 </blue>
+        </ambient>
+-->
+        <specular>
+          <red>   0.8 </red>
+          <green> 0.8 </green>
+          <blue>  0.8 </blue>
+        </specular>
+
+        <emission>
+          <red>   0.4 </red>
+          <green> 0.4 </green>
+          <blue>  0.4 </blue>
+        </emission>
+<!--
+        <transparency>
+          <alpha> 0.0 </alpha>
+        </transparency>
+
+        <shininess>10</shininess>
+-->
       </livery>
     </model>
   </sim>
