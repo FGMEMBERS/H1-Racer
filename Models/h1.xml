@@ -29,8 +29,6 @@
     <object-name>profondeur</object-name>
     <object-name>direction</object-name>
     <object-name>moteur</object-name>
-    <object-name>axeG</object-name>
-    <object-name>axeD</object-name>
     <object-name>porte1G</object-name>
     <object-name>porte1D</object-name>
     <object-name>canopy</object-name>
@@ -42,6 +40,14 @@
     <object-name>canopytrans</object-name>
     <object-name>propblur</object-name>
     <object-name>propdisc</object-name>
+
+    <object-name>fuselagechrome</object-name>
+    <object-name>capotchrome</object-name>
+    <object-name>aileschrome</object-name>
+    <object-name>ailes2chrome</object-name>
+    <object-name>derivechrome</object-name>
+    <object-name>directionchrome</object-name>
+    <object-name>profondeurchrome</object-name>
   </animation>
 
   <animation>
@@ -50,6 +56,35 @@
     <object-name>canopytrans</object-name>
     <object-name>propblur</object-name>
     <object-name>propdisc</object-name>
+
+    <object-name>fuselagechrome</object-name>
+    <object-name>capotchrome</object-name>
+    <object-name>aileschrome</object-name>
+    <object-name>ailes2chrome</object-name>
+    <object-name>derivechrome</object-name>
+    <object-name>directionchrome</object-name>
+    <object-name>profondeurchrome</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass_shader.png</texture>
+    <object-name>verriere</object-name>
+    <object-name>canopytrans</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>fuselagechrome</object-name>
+    <object-name>capotchrome</object-name>
+    <object-name>aileschrome</object-name>
+    <object-name>ailes2chrome</object-name>
+    <object-name>derivechrome</object-name>
+    <object-name>directionchrome</object-name>
+    <object-name>profondeurchrome</object-name>
   </animation>
 
   <animation>
@@ -68,8 +103,6 @@
     <object-name>profondeur</object-name>
     <object-name>direction</object-name>
     <object-name>moteur</object-name>
-    <object-name>axeG</object-name>
-    <object-name>axeD</object-name>
     <object-name>porte1G</object-name>
     <object-name>porte1D</object-name>
     <object-name>canopy</object-name>
@@ -120,7 +153,7 @@
     </offsets>
   </model>
 
-  <!-- Iinterieur -->
+  <!-- Interieur -->
   <model>
     <path>Aircraft/H1-Racer/Models/Interior/interior.xml</path>
     <offsets>
@@ -200,6 +233,7 @@
   <animation>
     <type>rotate</type>
     <object-name>profondeur</object-name>
+    <object-name>profondeurchrome</object-name>
     <property>/controls/flight/elevator</property>
     <factor>11</factor>
     <center>
@@ -218,6 +252,7 @@
   <animation>
     <type>rotate</type>
     <object-name>direction</object-name>
+    <object-name>directionchrome</object-name>
     <property>/controls/flight/rudder</property>
     <factor>20</factor>
     <center>
@@ -296,14 +331,8 @@
 
   <!-- Rentré des roues -->
   <animation>
-    <name>TrainGauche</name>
-    <object-name>roueG</object-name>
-    <object-name>axeG</object-name>
-  </animation>
-
-  <animation>
     <type>rotate</type>
-    <object-name>TrainGauche</object-name>
+    <object-name>roueG</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
       <entry>
@@ -384,14 +413,8 @@
   </animation>
 
   <animation>
-    <name>TrainDroit</name>
-    <object-name>roueD</object-name>
-    <object-name>axeD</object-name>
-  </animation>
-
-  <animation>
     <type>rotate</type>
-    <object-name>TrainDroit</object-name>
+    <object-name>roueD</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
       <entry>
