@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -34,6 +34,7 @@
     <object-name>canopy</object-name>
     <object-name>voletG</object-name>
     <object-name>voletD</object-name>
+    <object-name>trous</object-name>
 
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
@@ -108,6 +109,7 @@
     <object-name>canopy</object-name>
     <object-name>voletG</object-name>
     <object-name>voletD</object-name>
+    <object-name>trous</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -141,6 +143,23 @@
       <shininess-prop>shininess</shininess-prop>
     </shininess>
 -->
+  </animation>
+
+  <!-- Une ombre pour OSG -->
+  <model>
+    <name>shadowOSG</name>
+    <path>Aircraft/H1-Racer/Models/shadow.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>shadowOSG</object-name>
+    <condition>
+      <equals>
+        <property>sim[0]/rendering/shadows-ai</property>
+        <value>true</value>
+      </equals>
+    </condition>
   </animation>
 
   <!-- Immatriculation -->
@@ -551,6 +570,52 @@
       <z>  3.5e-05  </z>
     </axis>
   </animation>
+
+  <!-- Ajout des effets lumineux -->
+  <model>
+    <path>Aircraft/H1-Racer/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m> 2.997 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 1.719 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H1-Racer/Models/light/RedLight.xml</path>
+    <offsets>
+      <x-m> -1.580 </x-m>
+      <y-m> -4.747 </y-m>
+      <z-m>  0.223 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H1-Racer/Models/light/GreenLight.xml</path>
+    <offsets>
+      <x-m> -1.580 </x-m>
+      <y-m>  4.747 </y-m>
+      <z-m>  0.223 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H1-Racer/Models/light/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> -1.590 </x-m>
+      <y-m> -4.747 </y-m>
+      <z-m>  0.223 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H1-Racer/Models/light/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> -1.590 </x-m>
+      <y-m>  4.747 </y-m>
+      <z-m>  0.223 </z-m>
+    </offsets>
+  </model>
 
 </PropertyList>
 
