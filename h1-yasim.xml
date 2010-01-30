@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- HUGHES H1 Racer - 2008 Emmanuel BARANGER
+
+     updated with Melchior Script 30-01-2019
+   
+     sources          : http://en.wikipedia.org/wiki/Hughes_H-1_Racer
+     wingspan         :  9.67 m    ( 31 ft 9 in)
+     length           :  8.23 m    ( 27 ft 0 in)
+     height           :  2.40 m    (  8 ft 0 in)
+     max speed        :   566 km/h ( 306 kts)
+     empty weight     :  1620 kg   (3565 lbs) 
+     engine           : 1 Pratt & Whitney R-1535 radial engine, 700 hp
+     fuel tank        : 250 gal (946 L) internal; up to 3 - 150 gal (568 L) external drop tanks
+-->
+
 <airplane mass="3565">
 
   <!-- Approach configuration -->
@@ -70,25 +84,37 @@
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"  min="1" max="-1"/>
   </vstab>
 
+  <!-- Engines   source            : http://en.wikipedia.org/wiki/Pratt_%26_Whitney_R-1535
+
+                 name              : Pratt & Whitney R-1535
+                 type              : 14 cylinder two-row supercharged air-cooled radial engine
+                 power cruise      :    825 hp  at 2625 rpm for takeoff
+                 weight            :    493 kg  ( 1087 lbs)
+                 displacement      : 1534.9 in3 ( 25.153 l)
+                 compression       : 6.75:1
+                 Reduction gear    : Epicyclic gearing 0.75:1
+                 Propeller diameter: 4 m (13 ft 1 in)
+  -->
   <propeller x="3.713" y="0" z="-0.053"
              radius="1.5"
-             mass="1900"
-             moment="100"
+             mass="1087"
+             moment="3"
              cruise-alt="10000"
              cruise-power="790"
              cruise-speed="290"
              cruise-rpm="2500"
              takeoff-power="825"
-             takeoff-rpm="2500"
-             gear-ratio="0.5833"
+             takeoff-rpm="2625"
+             gear-ratio="0.75"
              min-rpm="583"
              max-rpm="2700"
              fine-stop="0.9">
-             <actionpt x="3.713" y="0" z="-0.53"/>
+             <actionpt x="3.713" y="0" z="-0.053"/>
              <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE" />
              <piston-engine eng-power="825"
                             eng-rpm="2700"
-                            displacement="1.535">
+                            compression="6.75"
+                            displacement="1534.9">
                             <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
                             <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
                             <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
