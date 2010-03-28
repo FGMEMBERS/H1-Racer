@@ -70,7 +70,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>glass_shader.png</texture>
+    <texture>Aircraft/Generic/Effects/CubeCrosses/blue_sky_tx.png</texture>
     <object-name>verriere</object-name>
     <object-name>canopytrans</object-name>
   </animation>
@@ -78,7 +78,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>shader.png</texture>
+    <texture>Aircraft/Generic/Effects/CubeCrosses/blue_sky_tx.png</texture>
     <object-name>fuselagechrome</object-name>
     <object-name>capotchrome</object-name>
     <object-name>aileschrome</object-name>
