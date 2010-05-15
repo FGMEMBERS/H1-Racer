@@ -41,51 +41,6 @@
     <object-name>canopytrans</object-name>
     <object-name>propblur</object-name>
     <object-name>propdisc</object-name>
-
-    <object-name>fuselagechrome</object-name>
-    <object-name>capotchrome</object-name>
-    <object-name>aileschrome</object-name>
-    <object-name>ailes2chrome</object-name>
-    <object-name>derivechrome</object-name>
-    <object-name>directionchrome</object-name>
-    <object-name>profondeurchrome</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>verriere</object-name>
-    <object-name>canopytrans</object-name>
-    <object-name>propblur</object-name>
-    <object-name>propdisc</object-name>
-
-    <object-name>fuselagechrome</object-name>
-    <object-name>capotchrome</object-name>
-    <object-name>aileschrome</object-name>
-    <object-name>ailes2chrome</object-name>
-    <object-name>derivechrome</object-name>
-    <object-name>directionchrome</object-name>
-    <object-name>profondeurchrome</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/CubeCrosses/blue_sky_tx.png</texture>
-    <object-name>verriere</object-name>
-    <object-name>canopytrans</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/CubeCrosses/blue_sky_tx.png</texture>
-    <object-name>fuselagechrome</object-name>
-    <object-name>capotchrome</object-name>
-    <object-name>aileschrome</object-name>
-    <object-name>ailes2chrome</object-name>
-    <object-name>derivechrome</object-name>
-    <object-name>directionchrome</object-name>
-    <object-name>profondeurchrome</object-name>
   </animation>
 
   <animation>
@@ -145,6 +100,40 @@
 -->
   </animation>
 
+  <animation>
+    <type>noshadow</type>
+    <object-name>verriere</object-name>
+    <object-name>canopytrans</object-name>
+    <object-name>propblur</object-name>
+    <object-name>propdisc</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>verriere</object-name>
+    <object-name>canopytrans</object-name>
+  </animation>
+
+<!--
+    <object-name>ailes</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+-->
+  <effect>
+    <inherits-from>Aircraft/H1-Racer/Models/Effects/H1reflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>capot</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>derive</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>direction</object-name>
+    <object-name>canopy</object-name>
+  </effect>
+
   <!-- Une ombre pour OSG -->
   <model>
     <name>shadowOSG</name>
@@ -166,9 +155,9 @@
   <model>
     <path>Aircraft/H1-Racer/Models/Immat/immat.xml</path>
     <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.000 </z-m>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
     </offsets>
   </model>
 
@@ -176,9 +165,9 @@
   <model>
     <path>Aircraft/H1-Racer/Models/Interior/interior.xml</path>
     <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.000 </z-m>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
     </offsets>
   </model>
 
@@ -242,9 +231,9 @@
       <z-m> -0.059 </z-m>
     </center>
     <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -252,7 +241,6 @@
   <animation>
     <type>rotate</type>
     <object-name>profondeur</object-name>
-    <object-name>profondeurchrome</object-name>
     <property>/controls/flight/elevator</property>
     <factor>11</factor>
     <center>
@@ -261,9 +249,9 @@
       <z-m> 0.205 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -271,7 +259,6 @@
   <animation>
     <type>rotate</type>
     <object-name>direction</object-name>
-    <object-name>directionchrome</object-name>
     <property>/controls/flight/rudder</property>
     <factor>20</factor>
     <center>
@@ -280,9 +267,9 @@
       <z-m> 1.031 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 0.000 </y>
-      <z> 1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
@@ -354,14 +341,8 @@
     <object-name>roueG</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind>  0.0 </ind>
-        <dep> 85.0 </dep>
-      </entry>
-      <entry>
-        <ind> 1.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep> 85 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -1.851 </x-m>
@@ -369,9 +350,9 @@
       <z-m> -0.207 </z-m>
     </center>
     <axis>
-      <x> 1.00 </x>
-      <y> 0.00 </y>
-      <z> 0.00 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -386,14 +367,8 @@
     <object-name>PorteGauche</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind>  0.0 </ind>
-        <dep> 85.0 </dep>
-      </entry>
-      <entry>
-        <ind> 1.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep> 85 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -1.838 </x-m>
@@ -401,9 +376,9 @@
       <z-m> -0.236 </z-m>
     </center>
     <axis>
-      <x> 1.00 </x>
-      <y> 0.00 </y>
-      <z> 0.00 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -412,14 +387,8 @@
     <object-name>porte2G</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>   1.0 </ind>
-        <dep> -85.0 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -85 </dep></entry>
     </interpolation>
     <axis>
       <x1-m> -2.349 </x1-m>
@@ -436,14 +405,8 @@
     <object-name>roueD</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind>   0.0 </ind>
-        <dep> -85.0 </dep>
-      </entry>
-      <entry>
-        <ind> 1.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep> -85 </dep></entry>
+      <entry><ind> 1 </ind><dep>   0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -1.851 </x-m>
@@ -451,9 +414,9 @@
       <z-m> -0.207 </z-m>
     </center>
     <axis>
-      <x> 1.00 </x>
-      <y> 0.00 </y>
-      <z> 0.00 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -468,14 +431,8 @@
     <object-name>PorteDroite</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind>   0.0 </ind>
-        <dep> -85.0 </dep>
-      </entry>
-      <entry>
-        <ind> 1.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep> -85 </dep></entry>
+      <entry><ind> 1 </ind><dep>   0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -1.838 </x-m>
@@ -483,9 +440,9 @@
       <z-m> -0.236 </z-m>
     </center>
     <axis>
-      <x> 1.00 </x>
-      <y> 0.00 </y>
-      <z> 0.00 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -494,14 +451,8 @@
     <object-name>porte2D</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>  1.0 </ind>
-        <dep> 85.0 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 85 </dep></entry>
     </interpolation>
     <axis>
       <x1-m> -2.349 </x1-m>
@@ -525,9 +476,9 @@
       <z-m> -1.606 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -542,9 +493,9 @@
       <z-m> -1.606 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
