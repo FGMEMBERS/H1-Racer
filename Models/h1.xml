@@ -100,6 +100,24 @@
 -->
   </animation>
 
+<!--
+    <object-name>ailes</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+-->
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>capot</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>derive</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>direction</object-name>
+    <object-name>canopy</object-name>
+  </effect>
+
   <animation>
     <type>noshadow</type>
     <object-name>verriere</object-name>
@@ -115,24 +133,6 @@
     <object-name>verriere</object-name>
     <object-name>canopytrans</object-name>
   </animation>
-
-<!--
-    <object-name>ailes</object-name>
-    <object-name>aileronG</object-name>
-    <object-name>aileronD</object-name>
-    <object-name>voletG</object-name>
-    <object-name>voletD</object-name>
--->
-  <effect>
-    <inherits-from>Aircraft/H1-Racer/Models/Effects/H1reflect</inherits-from>
-    <object-name>fuselage</object-name>
-    <object-name>capot</object-name>
-    <object-name>profondeur</object-name>
-    <object-name>derive</object-name>
-    <object-name>ailes2</object-name>
-    <object-name>direction</object-name>
-    <object-name>canopy</object-name>
-  </effect>
 
   <!-- Une ombre pour OSG -->
   <model>
