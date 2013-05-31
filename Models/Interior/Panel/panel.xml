@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -18,9 +18,7 @@
       <x-m>  0.091 </x-m>
       <y-m>  0.058 </y-m>
       <z-m> -0.022 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -25.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <pitch-deg> -25 </pitch-deg>
     </offsets>
   </model>
 
@@ -31,9 +29,7 @@
       <x-m>  0.091 </x-m>
       <y-m> -0.058 </y-m>
       <z-m> -0.022 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -25.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <pitch-deg> -25 </pitch-deg>
     </offsets>
   </model>
 
@@ -44,9 +40,7 @@
       <x-m> 0.077 </x-m>
       <y-m> 0.197 </y-m>
       <z-m> 0.013 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -25.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <pitch-deg> -25 </pitch-deg>
     </offsets>
   </model>
 
@@ -57,11 +51,8 @@
       <x-m>  0.109 </x-m>
       <y-m> -0.197 </y-m>
       <z-m> -0.051 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -25.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <pitch-deg> -25 </pitch-deg>
     </offsets>
   </model>
 
 </PropertyList>
-

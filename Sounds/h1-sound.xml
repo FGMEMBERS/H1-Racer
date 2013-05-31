@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -86,9 +86,9 @@
       <pitch>
         <property>/engines/engine/rpm</property>
         <factor> 0.00033 </factor>
-        <min> 0.0 </min>
-        <max> 1.0 </max>
-        <offset> 0.0 </offset>
+        <min> 0 </min>
+        <max> 1 </max>
+        <offset> 0 </offset>
       </pitch>
     </engine>
 
@@ -110,12 +110,12 @@
         <factor> 0.4 </factor>
       </volume>
       <position>
-        <x> -1.0 </x>
-        <y>  0.0 </y>
-        <z> -2.0 </z>
+        <x> -1 </x>
+        <y>  0 </y>
+        <z> -2 </z>
       </position>
-      <reference-dist> 2.0 </reference-dist>
-      <max-dist> 5.0 </max-dist>
+      <reference-dist> 2 </reference-dist>
+      <max-dist> 5 </max-dist>
     </rumble>
 
     <splash>
@@ -147,12 +147,12 @@
         <max> 1.5 </max> 
       </pitch>
       <position>
-        <x> -1.0 </x>
-        <y>  0.0 </y>
-        <z> -2.0 </z>
+        <x> -1 </x>
+        <y>  0 </y>
+        <z> -2 </z>
       </position>
-      <reference-dist> 2.0 </reference-dist>
-      <max-dist> 5.0 </max-dist>
+      <reference-dist> 2 </reference-dist>
+      <max-dist> 5 </max-dist>
     </splash>
 
     <squeal>
@@ -167,31 +167,31 @@
       <volume>
         <property>/velocities/speed-down-fps</property>
         <factor> 0.5 </factor>
-        <max> 1.0 </max>
+        <max> 1 </max>
       </volume>
       <volume>
         <property>/velocities/airspeed-kt</property>
         <factor> 0.01 </factor>
-        <max> 1.0 </max>
+        <max> 1 </max>
       </volume>
       <volume>
         <internal>dt_stop</internal>
         <factor> 0.05 </factor>
-        <max> 1.0 </max>
+        <max> 1 </max>
       </volume>
       <pitch>
         <property>/velocities/airspeed-kt</property>
         <factor> 0.0025 </factor>
         <offset> 0.5000 </offset>
-        <max> 1.0 </max>
+        <max> 1 </max>
       </pitch>
       <position>
-        <x> -1.0 </x>
-        <y>  0.0 </y>
-        <z> -2.0 </z>
+        <x> -1 </x>
+        <y>  0 </y>
+        <z> -2 </z>
       </position>
-      <reference-dist> 5.0 </reference-dist>
-      <max-dist> 10.0 </max-dist>
+      <reference-dist> 5 </reference-dist>
+      <max-dist> 10 </max-dist>
     </squeal>
 
     <flap>
@@ -203,12 +203,12 @@
         <factor> 0.15 </factor>
       </volume>
       <position>
-        <x> 1.0 </x>
-        <y> 0.0 </y>
-        <z> 1.0 </z>
+        <x> 1 </x>
+        <y> 0 </y>
+        <z> 1 </z>
       </position>
       <reference-dist> 2.5 </reference-dist>
-      <max-dist> 5.0 </max-dist>
+      <max-dist> 5 </max-dist>
     </flap>
 
     <wind>
@@ -250,15 +250,15 @@
       <property>sim/alarms/stall-warning</property>
       <volume>
         <property>/sim/alarms/stall-warning</property>
-        <max> 1.0 </max>
+        <max> 1 </max>
       </volume>
       <position>
         <x> -0.5 </x>
         <y>  0.0 </y>
         <z>  0.0 </z>
       </position>
-      <reference-dist> 2.0 </reference-dist>
-      <max-dist> 4.0 </max-dist>
+      <reference-dist> 2 </reference-dist>
+      <max-dist> 4 </max-dist>
     </stall>
 
     <!--                  Toggle Switches                  -->     
@@ -277,8 +277,8 @@
         <y>  0.0 </y>
         <z>  0.0 </z>
       </position>
-      <reference-dist> 2.0 </reference-dist>
-      <max-dist> 4.0 </max-dist>
+      <reference-dist> 2 </reference-dist>
+      <max-dist> 4 </max-dist>
     </switch>
 
     <switch>
@@ -298,8 +298,8 @@
         <y>  0.0 </y>
         <z>  0.0 </z>
       </position>
-      <reference-dist> 2.0 </reference-dist>
-      <max-dist> 4.0 </max-dist>
+      <reference-dist> 2 </reference-dist>
+      <max-dist> 4 </max-dist>
     </switch>
 
     <rain>
@@ -309,23 +309,24 @@
       <condition>
         <greater-than>
           <property>/environment/metar/rain-norm</property>
-          <value>0.2</value>
+          <value> 0.2 </value>
         </greater-than>
       </condition>
       <volume>
         <property>/environment/metar/rain-norm</property>
-        <factor>1.00</factor>
-        <offset>0.00</offset>
-        <min>0.4</min>
-        <max>0.9</max>
+        <factor> 1 </factor>
+        <offset> 0 </offset>
+        <min> 0.4 </min>
+        <max> 0.9 </max>
       </volume>
       <pitch>
         <property>/velocities/airspeed-kt</property>
-        <factor>0.001</factor>
-        <offset>1.0</offset>
+        <factor> 0.001 </factor>
+        <offset> 1 </offset>
       </pitch>
     </rain>
 
-</fx>
+  </fx>
 
 </PropertyList>
+

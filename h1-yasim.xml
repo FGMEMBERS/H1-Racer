@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- HUGHES H1 Racer - 2008 Emmanuel BARANGER
 
@@ -43,9 +43,9 @@
         taper="0.56"
         sweep="-2"
         dihedral="6.0">
-        <stall aoa="14" width="5" peak="1.5"/>
-        <flap0 start="0.096" end="0.504" lift="1.7" drag="1.9"/>
-        <flap1 start="0.521" end="0.944" lift="1.4" drag="1.1"/>
+        <stall aoa="14" width="1" peak="1.5"/>
+        <flap0 start="0.0" end="0.5" lift="1.7" drag="1.9"/>
+        <flap1 start="0.5" end="1.0" lift="1.4" drag="1.1"/>
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
         <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
         <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
@@ -63,8 +63,8 @@
 	 length="1.7"
          sweep="2"
          taper="0.439">
-         <stall aoa="17" width="8" peak="1.5"/>
-         <flap0 start="0.0" end="1" lift="1.55" drag="1.3"/>
+         <stall aoa="17" width="1" peak="1.5"/>
+         <flap0 start="0.0" end="1" lift="1.3" drag="1.2"/>
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
          
@@ -76,7 +76,7 @@
 	 length="1.5"
          taper="0.21"
 	 sweep="0">
-         <stall aoa="15" width="4" peak="1.5"/>
+         <stall aoa="15" width="1" peak="1.5"/>
          <flap0 start="0" end="1" lift="1.3" drag="1.3"/>
          <control-input axis="/controls/flight/rudder" square="true" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
@@ -148,10 +148,15 @@
         <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
   </gear>
 
-  <gear x="-3.057" y="0.0" z="-0.504"
+  <gear x="-3.03277" y="0" z="-0.49125"
         compression="0.15"
         dfric="0.6"
         sfric ="0.70">
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+
+        <control-speed control="EXTEND" transition-time="6"/>
+
+        <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
   </gear>
 
   <tank x="1.2" y="1.15" z="-0.297" capacity="482.5"/> 

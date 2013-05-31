@@ -379,17 +379,17 @@
   <animation>
     <type>rotate</type>
     <object-name>SurDirection</object-name>
-    <property>/controls/flight/rudder</property>
-    <factor>20</factor>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 15 </factor>
     <center>
       <x-m> 3.133 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 1.031 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 0.000 </y>
-      <z> 1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
