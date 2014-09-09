@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>intcanopy</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intverriere</object-name>
+    <object-name>intcanopytrans</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intverriere</object-name>
+    <object-name>intcanopytrans</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intverriere</object-name>
+    <object-name>intcanopytrans</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>intverriere</object-name>
+    <object-name>intcanopytrans</object-name>
+  </effect>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/H1-Racer/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -0.286 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.350 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/H1-Racer/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.022 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <name>AllIntCanopy</name>
+    <object-name>intcanopytrans</object-name>
+    <object-name>intcanopy</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>AllIntCanopy</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>AllIntCanopy</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <factor> -175 </factor>
+    <axis>
+      <x1-m> -0.02549 </x1-m>
+      <y1-m>  0.40866 </y1-m>
+      <z1-m>  0.29065 </z1-m>
+      <x2-m>  0.56249 </x2-m>
+      <y2-m>  0.37485 </y2-m>
+      <z2-m>  0.29062 </z2-m>
+    </axis>
+  </animation>
+
+</PropertyList>
+

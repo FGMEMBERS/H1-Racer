@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Cranking effects -->
+  <!-- Left -->
+  <model>
+    <path>Aircraft/H1-Racer/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> 0.00000 </x-m>
+      <y-m> 0.07909 </y-m>
+      <z-m> 0.38854 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H1-Racer/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> 0.00000 </x-m>
+      <y-m> 0.29276 </y-m>
+      <z-m> 0.28890 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H1-Racer/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> 0.00000 </x-m>
+      <y-m> 0.39444 </y-m>
+      <z-m> 0.16773 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H1-Racer/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  0.00000 </x-m>
+      <y-m>  0.45546 </y-m>
+      <z-m> -0.06000 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H1-Racer/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  0.00000 </x-m>
+      <y-m>  0.39444 </y-m>
+      <z-m> -0.28773 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H1-Racer/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  0.00000 </x-m>
+      <y-m>  0.29276 </y-m>
+      <z-m> -0.40890 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H1-Racer/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  0.00000 </x-m>
+      <y-m>  0.07909 </y-m>
+      <z-m> -0.50854 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>Aircraft/H1-Racer/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  0.00000 </x-m>
+      <y-m> -0.07909 </y-m>
+      <z-m>  0.38854 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/H1-Racer/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  0.00000 </x-m>
+      <y-m> -0.29276 </y-m>
+      <z-m>  0.28890 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/H1-Racer/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  0.00000 </x-m>
+      <y-m> -0.39444 </y-m>
+      <z-m>  0.16773 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/H1-Racer/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  0.00000 </x-m>
+      <y-m> -0.45546 </y-m>
+      <z-m> -0.06000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/H1-Racer/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  0.00000 </x-m>
+      <y-m> -0.39444 </y-m>
+      <z-m> -0.28773 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/H1-Racer/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  0.00000 </x-m>
+      <y-m> -0.29276 </y-m>
+      <z-m> -0.40890 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/H1-Racer/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  0.00000 </x-m>
+      <y-m> -0.07909 </y-m>
+      <z-m> -0.50854 </z-m>
+    </offsets>
+  </model>
+  
+</PropertyList>
