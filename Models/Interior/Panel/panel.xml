@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/H1-Racer/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.091 </x-m>
+      <y-m>  0.058 </y-m>
+      <z-m> -0.022 </z-m>
+      <pitch-deg> -25 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- COMPASS -->
+  <model>
+    <path>Aircraft/H1-Racer/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m>  0.091 </x-m>
+      <y-m> -0.058 </y-m>
+      <z-m> -0.022 </z-m>
+      <pitch-deg> -25 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/H1-Racer/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> 0.077 </x-m>
+      <y-m> 0.197 </y-m>
+      <z-m> 0.013 </z-m>
+      <pitch-deg> -25 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- ALTITUDE -->
+  <model>
+    <path>Aircraft/H1-Racer/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.109 </x-m>
+      <y-m> -0.197 </y-m>
+      <z-m> -0.051 </z-m>
+      <pitch-deg> -25 </pitch-deg>
+    </offsets>
+  </model>
+
+</PropertyList>

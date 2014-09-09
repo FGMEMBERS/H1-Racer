@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- HUGHES H1 Racer - 2008 Emmanuel BARANGER
+
+     updated with Melchior Script 30-01-2019
+   
+     sources          : http://en.wikipedia.org/wiki/Hughes_H-1_Racer
+     wingspan         :  9.67 m    ( 31 ft 9 in)
+     length           :  8.23 m    ( 27 ft 0 in)
+     height           :  2.40 m    (  8 ft 0 in)
+     max speed        :   566 km/h ( 306 kts)
+     empty weight     :  1620 kg   (3565 lbs) 
+     engine           : 1 Pratt & Whitney R-1535 radial engine, 700 hp
+     fuel tank        : 250 gal (946 L) internal; up to 3 - 150 gal (568 L) external drop tanks
+-->
+
+<airplane mass="3565">
+
+  <!-- Approach configuration -->
+  <approach speed="70" aoa="8">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="0.55"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.6"/>
+    <control-setting axis="/controls/gear/gear-down" value="1"/>
+  </approach>
+
+  <!-- Cruise configuration -->
+  <cruise speed="290" alt="10000">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+    <control-setting axis="/controls/gear/gear-down" value="0"/>
+  </cruise>
+
+  <!-- pilot's eyepoint -->
+  <cockpit x="-0.160" y="0" z="0.444"/>
+
+  <fuselage ax="3.600" ay="0.0" az="-0.053" bx="-4.065" by="0.0" bz="0.203" width="0.989" taper="0.3" midpoint="0.02"/>
+
+  <wing x="1.191" y="0.409" z="-0.183"
+        chord="2.325"
+        length="4.4"
+        taper="0.56"
+        sweep="-2"
+        dihedral="6.0">
+        <stall aoa="14" width="1" peak="1.5"/>
+        <flap0 start="0.0" end="0.5" lift="1.7" drag="1.9"/>
+        <flap1 start="0.5" end="1.0" lift="1.4" drag="1.1"/>
+        <control-input axis="/controls/flight/flaps" control="FLAP0"/>
+        <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
+        <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
+
+        <control-output control="FLAP0" prop="surface-positions/flap-pos-norm"/>
+        <control-output control="FLAP1" side="left"  prop="surface-positions/left-aileron-pos-norm"/>
+        <control-output control="FLAP1" side="right"  prop="surface-positions/right-aileron-pos-norm"/>
+
+        <control-speed control="FLAP0" transition-time="7"/>
+        <control-speed control="FLAP1" transition-time="1"/>
+  </wing>
+
+  <hstab x="-3.325" y="0.0" z="0.207"
+	 chord="1.277"
+	 length="1.7"
+         sweep="2"
+         taper="0.439">
+         <stall aoa="17" width="1" peak="1.5"/>
+         <flap0 start="0.0" end="1" lift="1.3" drag="1.2"/>
+         <control-input axis="/controls/flight/elevator" control="FLAP0"/>
+         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+         
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+  </hstab>
+
+  <vstab x="-3.22" y="0.0" z="0.317"
+	 chord="1.376"
+	 length="1.5"
+         taper="0.21"
+	 sweep="0">
+         <stall aoa="15" width="1" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.3" drag="1.3"/>
+         <control-input axis="/controls/flight/rudder" square="true" control="FLAP0" invert="true"/>
+         <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"  min="1" max="-1"/>
+  </vstab>
+
+  <!-- Engines   source            : http://en.wikipedia.org/wiki/Pratt_%26_Whitney_R-1535
+
+                 name              : Pratt & Whitney R-1535
+                 type              : 14 cylinder two-row supercharged air-cooled radial engine
+                 power cruise      :    825 hp  at 2625 rpm for takeoff
+                 weight            :    493 kg  ( 1087 lbs)
+                 displacement      : 1534.9 in3 ( 25.153 l)
+                 compression       : 6.75:1
+                 Reduction gear    : Epicyclic gearing 0.75:1
+                 Propeller diameter: 4 m (13 ft 1 in)
+  -->
+  <propeller x="3.713" y="0" z="-0.053"
+             radius="1.5"
+             mass="1087"
+             moment="3"
+             cruise-alt="10000"
+             cruise-power="790"
+             cruise-speed="290"
+             cruise-rpm="2500"
+             takeoff-power="825"
+             takeoff-rpm="2625"
+             gear-ratio="0.75"
+             min-rpm="583"
+             max-rpm="2700"
+             fine-stop="0.9">
+             <actionpt x="3.713" y="0" z="-0.053"/>
+             <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE" />
+             <piston-engine eng-power="825"
+                            eng-rpm="2700"
+                            compression="6.75"
+                            displacement="1534.9">
+                            <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+                            <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
+                            <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
+                            <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
+             </piston-engine>
+  </propeller>
+
+  <gear x="2.255" y="1.504" z="-1.831"
+        compression="0.25"
+        dfric="0.6"
+        sfric ="0.70">
+        <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+
+        <control-speed control="EXTEND" transition-time="6"/>
+
+        <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
+  </gear>
+
+  <gear x="2.255" y="-1.504" z="-1.831"
+        compression="0.25"
+        dfric="0.6"
+        sfric ="0.70">
+        <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+
+        <control-speed control="EXTEND" transition-time="6"/>
+
+        <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
+  </gear>
+
+  <gear x="-3.03277" y="0" z="-0.49125"
+        compression="0.15"
+        dfric="0.6"
+        sfric ="0.70">
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+
+        <control-speed control="EXTEND" transition-time="6"/>
+
+        <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
+  </gear>
+
+  <tank x="1.2" y="1.15" z="-0.297" capacity="482.5"/> 
+  <tank x="1.2" y="-1.15" z="-0.297" capacity="482.5"/> 
+
+  <!-- pilot -->
+  <ballast x="-0.5" y="0" z="-0.3" mass="180"/>
+  <ballast x="-1.5" y="0" z="0" mass="350"/>
+
+</airplane>
