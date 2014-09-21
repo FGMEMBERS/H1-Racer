@@ -17,11 +17,10 @@
         <label>Immatriculation</label>
         <binding>
           <command>nasal</command>
-          <script>h1.immat_dialog.toggle()</script>
+          <script>immat.immat_dialog.toggle()</script>
         </binding>
       </item>
     </menu>
   </default>
 
 </PropertyList>
-

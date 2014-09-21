@@ -48,11 +48,22 @@
   <model>
     <path>Aircraft/H1-Racer/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
-      <x-m>  0.109 </x-m>
+      <x-m>  0.108 </x-m>
       <y-m> -0.197 </y-m>
       <z-m> -0.051 </z-m>
       <pitch-deg> -25 </pitch-deg>
     </offsets>
   </model>
 
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/H1-Racer/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.123 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.086 </z-m>
+      <pitch-deg> -25 </pitch-deg>
+    </offsets>
+  </model>
+  
 </PropertyList>

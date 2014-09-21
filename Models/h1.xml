@@ -13,9 +13,9 @@
       var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
       var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
       
-      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
-      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
-    
+      var crew_door = self.getNode("sim/model/door-positions/crew/position-norm", 1);
+      var passenger_door = self.getNode("sim/model/door-positions/passenger/position-norm", 1);
+      
       crew_door.alias(float_0);
       passenger_door.alias(float_1);
     </load>
@@ -97,11 +97,6 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-    <specular>
-      <red-prop>specular/red</red-prop>
-      <green-prop>specular/green</green-prop>
-      <blue-prop>specular/blue</blue-prop>
-    </specular>
     <emission>
       <red-prop>emission/red</red-prop>
       <green-prop>emission/green</green-prop>
@@ -110,11 +105,7 @@
   </animation>
 
   <effect>
-    <!-- <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from> -->
-    <inherits-from>Aircraft/H1-Racer/Models/Effects/H1reflect</inherits-from>
-    <condition>
-      <not><property>sim/rendering/rembrandt/enabled</property></not>
-    </condition>
+    <inherits-from>Aircraft/H1-Racer/Models/Effects/Reflect/H1reflect</inherits-from>
     <object-name>fuselage</object-name>
     <object-name>capot</object-name>
     <object-name>profondeur</object-name>
@@ -128,54 +119,22 @@
     <object-name>porte2G</object-name>
     <object-name>porte2D</object-name>
   </effect>
-
-  <effect>
-    <inherits-from>Effects/model-combined-deferred</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
-    <object-name>fuselage</object-name>
-    <object-name>capot</object-name>
-    <object-name>profondeur</object-name>
-    <object-name>derive</object-name>
-    <object-name>ailes2</object-name>
-    <object-name>direction</object-name>
-    <object-name>canopy</object-name>
-    <object-name>porteAG</object-name>
-    <object-name>porteAD</object-name>
-    <object-name>pate</object-name>
-    <object-name>porte2G</object-name>
-    <object-name>porte2D</object-name>
-  </effect>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>verriere</object-name>
-    <object-name>canopytrans</object-name>
-    <object-name>propblur</object-name>
-    <object-name>propdisc</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>verriere</object-name>
-    <object-name>canopytrans</object-name>
-  </animation>
 
   <!-- working for Rembrandt -->
   <effect>
+    <inherits-from>Aircraft/H1-Racer/Models/Effects/Glass/glass</inherits-from>
+    <object-name>verriere</object-name>
+  </effect>
+  
+  <!-- working for Rembrandt -->
+  <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
     <object-name>verriere</object-name>
     <object-name>canopytrans</object-name>
     <object-name>propblur</object-name>
     <object-name>propdisc</object-name>
   </effect>
-
+  
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/H1-Racer/Models/shadow.xml</path>
@@ -188,15 +147,8 @@
 
   <!-- Interieur -->
   <model>
-    <name>Interieur</name>
     <path>Aircraft/H1-Racer/Models/Interior/interior.xml</path>
   </model>
-
-  <!-- For Rembrandt -->
-  <animation>
-    <type>noshadow</type>
-    <object-name>Interieur</object-name>
-  </animation>
 
   <!-- Immatriculation -->
   <model>
@@ -331,7 +283,7 @@
     <type>rotate</type>
     <object-name>profondeur</object-name>
     <property>surface-positions/elevator-pos-norm</property>
-    <factor> 11 </factor>
+    <factor> 15 </factor>
     <center>
       <x-m> 3.42168 </x-m>
       <y-m> 0.00000 </y-m>
@@ -398,7 +350,7 @@
     <type>rotate</type>
     <object-name>voletG</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor> -30 </factor>
+    <factor> -40 </factor>
     <axis>
       <x1-m> -0.619 </x1-m>
       <y1-m> -0.875 </y1-m>
@@ -413,7 +365,7 @@
     <type>rotate</type>
     <object-name>voletD</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor> -30 </factor>
+    <factor> -40 </factor>
     <axis>
       <x1-m> -0.797 </x1-m>
       <y1-m>  2.282 </y1-m>
