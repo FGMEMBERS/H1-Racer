@@ -145,26 +145,23 @@
     </offsets>
   </model>
 
-  <!-- Interieur -->
-  <model>
-    <path>Aircraft/H1-Racer/Models/Interior/interior.xml</path>
-  </model>
-
   <!-- Immatriculation -->
   <model>
     <path>Aircraft/H1-Racer/Models/Immat/immat.xml</path>
   </model>
+  
+  <!-- Interieur -->
+  <model>
+    <usage>interior</usage>
+    <path>Aircraft/H1-Racer/Models/Interior/interior.xml</path>
+  </model>
 
   <!-- Le moteur -->
   <model>
+    <usage>interior</usage>
     <path>Aircraft/H1-Racer/Models/Engines/engine.xml</path>
-    <offsets>
-      <x-m> -3.41 </x-m>
-      <y-m>  0.00 </y-m>
-      <z-m> -0.06 </z-m>
-    </offsets>
   </model>
-
+  
   <!-- Cranking -->
   <model>
     <path>Aircraft/H1-Racer/Models/Effects/cranking/cranking.xml</path>
