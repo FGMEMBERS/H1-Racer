@@ -3,7 +3,12 @@
 <PropertyList>
 
   <path>r-1535.ac</path>
-
+  <offsets>
+    <x-m> -3.41 </x-m>
+    <y-m>  0.00 </y-m>
+    <z-m> -0.06 </z-m>
+  </offsets>
+  
   <animation>
     <!-- Objets opaques -->
     <object-name>bloc</object-name>
