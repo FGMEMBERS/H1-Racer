@@ -152,7 +152,6 @@
   
   <!-- Interieur -->
   <model>
-    <usage>interior</usage>
     <path>Aircraft/H1-Racer/Models/Interior/interior.xml</path>
   </model>
 
